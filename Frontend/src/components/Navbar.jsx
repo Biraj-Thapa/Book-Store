@@ -1,6 +1,6 @@
 import React from "react";
 
-const NavBar = () => {
+const Navbar = () => {
   const navItems = (
     <>
       <li>
@@ -112,4 +112,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;
