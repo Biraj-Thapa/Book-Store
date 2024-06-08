@@ -23,10 +23,13 @@ const Signup = () => {
       if (res.data){
         alert("Signup Successfull")
       }
+      localStorage.setItem("Users",JSON.stringify(res.data.user))
       
     }).catch((err)=>{
-      console.log(err)
-      alert("Error : "+err)
+      if(err.response){
+        console.log(err)
+      alert("Error : "+err.response.data.message)
+      }
     })
   }
   return (
